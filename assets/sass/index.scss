@@ -1,8 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/george-rounded');
+
+$font-stack:'Josefin Sans', sans-serif;
+$background-color-button:rgba(45, 99, 94, 1);
+$h1h4:'Cedarville Cursive',sans-serif;
 
 
+.body{
+    margin: 5%;
+   }
 
 .header{
     justify-content: space-between;
@@ -10,7 +18,7 @@
     display: grid;
     grid-template-areas: "logo nav button";
     grid-template-columns: 40% 60% 20%;
-    padding: 3%;
+
 
     .header__logo{
         grid-area: logo;
@@ -24,50 +32,167 @@
         .header__text{
             display: flex;
             align-items: center;
-            
-            color: var(--Main-Black, #000);
-            font-family: Cedarville Cursive;
+            color: #000;
+            font-family: $h1h4;
             font-size: 32px;
             font-style: normal;
             font-weight: 400;
-            line-height: normal;
+
             
             }
 
+
+
 }
-
-
 .header__nav{
-grid-area: nav;
-display: flex;
-text-align: center;
-align-self: center;
-justify-content: space-between;
-text-decoration: none;
-color: black;
-font-family: Josefin Sans;
-font-size: 16px;
-font-weight: 500;
+    display: flex;
+    grid-area: nav;
+    text-align: center;
+    align-self: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: 500;
+
+    }
+    .header__button-green{
+    grid-area: button;
+    width: 20%;
+    height: 6vh;
+    flex-shrink: 0;
+    background-color: rgba(45, 99, 94, 1);
+    border-radius: 10px;
+    border: none;
+    
+    color:  #FFF;
+    text-align: center;
+    font-family: $font-stack;
+    font-size: 120%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+
+
+
+.generalinfo__p{
+    color:  #444A4A;
+
+
+font-family: $h1h4;
+font-size: 200%;
 font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+.generalinfo__h1{
+color:  #000;
+font-family: $font-stack;
+font-size: 345%;
+font-style: normal;
+font-weight: 700;
 line-height: normal;
 }
-.header__button-green{
-grid-area: button;
-width: 20%;
-height: 6vh;
+.button-green{
+width: 30%;
+height: 13%;
 flex-shrink: 0;
-fill: var(--Primary-Green, #2D635E);
-filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.10));
-background-color: rgba(45, 99, 94, 1);
+background-color: $background-color-button;
 border-radius: 10px;
 border: none;
-
-color: var(--Main-White, #FFF);
+color:  #FFF;
 text-align: center;
-font-family: Josefin Sans;
-font-size: 16px;
+font-family: 'George Rounded';
+font-size: 130%;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+
+
+.section-general{
+    display: grid;
+    grid-template-columns: 60% 40% ;
+
+}
+.generalinfo{
+    padding-top: 15%;
+}
+
+.otherinfo {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    
+  }
+  .small-square {
+    display: flex;
+    
+    width: 30%;
+    height: 30%;
+    margin-bottom: 5%;
+    flex-shrink: 0;
+    opacity: 0.4;
+    background-color:  #E3EBE7;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+
+ 
+      }
+      .small-square svg{
+        display: block;
+
+      
+
+      }
+    
+      .big-square {
+        width: 80%;
+        height: 90%;
+        flex-shrink: 0;
+        background-color:  #E3EBE7;
+        
+        position: relative;
+      }
+    
+      .big-square__img{
+    
+        margin-top: 35%;
+        margin-left: 8%;
+    
+        width: 80%;
+        height: 80%;
+    
+    }
+
+
+.follow-us{
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 22%;
+    margin-left: -12%;
+    flex-shrink: 0;
+    color: #444A4A;
+    transform: rotate(-90deg);
+    font-family: $font-stack;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    .follow-us__media{
+
+        justify-content: space-between;
+        padding: 3px;
+    
+    }
+
+
+}
+
 

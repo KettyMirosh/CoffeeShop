@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
+@import url("https://fonts.cdnfonts.com/css/george-rounded");
+.body {
+  margin: 5%;
+}
+
 .header {
   justify-content: space-between;
   align-items: center;
   display: grid;
   grid-template-areas: "logo nav button";
   grid-template-columns: 40% 60% 20%;
-  padding: 3%;
 }
 .header .header__logo {
   grid-area: logo;
@@ -18,27 +22,24 @@
 .header .header__text {
   display: flex;
   align-items: center;
-  color: var(--Main-Black, #000);
-  font-family: Cedarville Cursive;
+  color: #000;
+  font-family: "Cedarville Cursive", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .header__nav {
-  grid-area: nav;
   display: flex;
+  grid-area: nav;
   text-align: center;
   align-self: center;
   justify-content: space-between;
   text-decoration: none;
   color: black;
-  font-family: Josefin Sans;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  font-style: normal;
-  line-height: normal;
 }
 
 .header__button-green {
@@ -46,18 +47,117 @@
   width: 20%;
   height: 6vh;
   flex-shrink: 0;
-  fill: var(--Primary-Green, #2D635E);
-  filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.1));
   background-color: rgb(45, 99, 94);
   border-radius: 10px;
   border: none;
-  color: var(--Main-White, #FFF);
+  color: #FFF;
   text-align: center;
-  font-family: Josefin Sans;
-  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 120%;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.generalinfo__p {
+  color: #444A4A;
+  font-family: "Cedarville Cursive", sans-serif;
+  font-size: 200%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.generalinfo__h1 {
+  color: #000;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 345%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.button-green {
+  width: 30%;
+  height: 13%;
+  flex-shrink: 0;
+  background-color: rgb(45, 99, 94);
+  border-radius: 10px;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-family: "George Rounded";
+  font-size: 130%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-general {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.generalinfo {
+  padding-top: 15%;
+}
+
+.otherinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-square {
+  display: flex;
+  width: 30%;
+  height: 30%;
+  margin-bottom: 5%;
+  flex-shrink: 0;
+  opacity: 0.4;
+  background-color: #E3EBE7;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-square svg {
+  display: block;
+}
+
+.big-square {
+  width: 80%;
+  height: 90%;
+  flex-shrink: 0;
+  background-color: #E3EBE7;
+  position: relative;
+}
+
+.big-square__img {
+  margin-top: 35%;
+  margin-left: 8%;
+  width: 80%;
+  height: 80%;
+}
+
+.follow-us {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 22%;
+  margin-left: -12%;
+  flex-shrink: 0;
+  color: #444A4A;
+  transform: rotate(-90deg);
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.follow-us .follow-us__media {
+  justify-content: space-between;
+  padding: 3px;
 }
 
 /*# sourceMappingURL=index.css.map */
