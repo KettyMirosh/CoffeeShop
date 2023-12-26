@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
+.header {
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-areas: "logo nav button";
+  grid-template-columns: 40% 60% 20%;
+  padding: 3%;
+}
+.header .header__logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  width: 10%;
+  height: 50%;
+}
+.header .header__text {
+  display: flex;
+  align-items: center;
+  color: var(--Main-Black, #000);
+  font-family: Cedarville Cursive;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__nav {
+  grid-area: nav;
+  display: flex;
+  text-align: center;
+  align-self: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+  font-family: Josefin Sans;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+
+.header__button-green {
+  grid-area: button;
+  width: 20%;
+  height: 6vh;
+  flex-shrink: 0;
+  fill: var(--Primary-Green, #2D635E);
+  filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.1));
+  background-color: rgb(45, 99, 94);
+  border-radius: 10px;
+  border: none;
+  color: var(--Main-White, #FFF);
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*# sourceMappingURL=index.css.map */
