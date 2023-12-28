@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
 @import url("https://fonts.cdnfonts.com/css/george-rounded");
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
 .body {
   margin: 5%;
 }
@@ -158,6 +159,103 @@
 .follow-us .follow-us__media {
   justify-content: space-between;
   padding: 3px;
+}
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.about_us_info__p1 {
+  color: var(--Secondary-Hard-green, #444A4A);
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 189.474% */
+  letter-spacing: 0.019px;
+}
+.about_us_info__p2 {
+  color: var(--Secondary-Hard-green, #444A4A);
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 189.474% */
+  letter-spacing: 0.019px;
+}
+.about_us_title {
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  margin-left: -4%;
+  margin-top: 27%;
+
+}
+.about_us {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.orange-square {
+  margin-top: 5%;
+  width: 80%;
+  height: 80%;
+  flex-shrink: 0;
+  background-color: #FAE9E0;
+  position: relative;
+}
+
+.orange-square__img {
+  margin-top: -30%;
+  margin-left: 13%;
+  width: 90%;
+  height: 95%;
+}
+.about_us_info {
+  margin-right: 15%;
+}
+
+.promotion_p {
+  color: var(--Secondary-Hard-green, #444A4A);
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 189.474% */
+  letter-spacing: 0.019px;
+}
+
+.promotion {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.green-square {
+  margin-top: 10%;
+  width: 90%;
+  height: 80%;
+  flex-shrink: 0;
+  background-color: #E3EBE7;
+  position: relative;
+}
+
+.promotion_title {
+  transform: rotate(-90deg);
+  transform-origin: top right;
+  text-align: end;
+  margin-right: 10%;
+  margin-top: -7%;
+}
+
+.green-square__img {
+  margin-top: -25%;
+  margin-left: 12%;
+  width: 70%;
+  height: 120%;
+}
+.promotion_info {
+  margin-right: 22%;
 }
 
 /*# sourceMappingURL=index.css.map */
