@@ -267,7 +267,6 @@ h2 {
   margin-right: 22%;
 }
 
-<<<<<<< HEAD
 .address-1 {
   font-family: Josefin Sans;
   font-size: 32px;
@@ -328,7 +327,6 @@ margin-top: -9%;
   margin: 10%;
 
 }
-=======
 /* Медиазапрос для планшетов */
 @media (min-width: 768px) and (max-width: 1023px) {
   .body {
@@ -570,5 +568,4 @@ margin-top: -9%;
   }
 }
 
->>>>>>> 173b6c1764bc7eca0d8e3ea20e23307d6be18683
 /*# sourceMappingURL=index.css.map */
