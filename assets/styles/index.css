@@ -3,9 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
 @import url("https://fonts.cdnfonts.com/css/george-rounded");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap");
-
-/* Медиазапрос для компьютеров */
-@media (min-width: 1024px) {
 .body {
   margin: 5%;
 }
@@ -17,11 +14,6 @@
   grid-template-areas: "logo nav button";
   grid-template-columns: 40% 60% 20%;
 }
-
-.hamburger-menu {
-  display: none;
-}
-
 .header .header__logo {
   grid-area: logo;
   display: flex;
@@ -101,6 +93,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.hamburger-menu {
+  display: none;
 }
 
 .section-general {
@@ -282,50 +278,48 @@ h2 {
   line-height: 45px;
   letter-spacing: 0.02em;
   text-align: justified;
-  
 }
+
 .small-address {
-
-font-family: "Alegreya Sans", sans-serif;
-font-size: 19px;
-font-weight: 400;
-line-height: 36px;
-letter-spacing: 0.001em;
-text-align: justified;
-
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.001em;
+  text-align: justified;
 }
 
-.contacts{
-
+.contacts {
   transform: rotate(-90deg);
   transform-origin: top right;
   text-align: end;
   margin-right: 11%;
   margin-top: -7%;
-
+  width: 88%;
 }
+
 .snazzy_img {
   /* snazzy-image (1) 1 */
-
-
-width: 646px;
-height: 351px;
-left: 120px;
-top: 2300px;
-border-radius: 5px;
-margin-top: -9%;
-
+  width: 95%; /*646px */
+  height: 100%; /*351px */
+  left: 120px;
+  top: 2300px;
+  border-radius: 5px;
+  margin-top: -9%;
 }
+
 .footer_snazzy {
   margin-top: 10%;
   display: grid;
   grid-template-columns: 50% 20% 30%;
 }
+
 .line5 {
   text-align: center;
+  width: 100%;
 }
-.samwyle {
 
+.samwyle {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 19px;
   font-weight: 400;
@@ -333,9 +327,8 @@ margin-top: -9%;
   letter-spacing: 0.001em;
   text-align: center;
   margin: 10%;
+}
 
-}
-}
 /* Медиазапрос для планшетов */
 @media (min-width: 768px) and (max-width: 1023px) {
   .body {
@@ -348,11 +341,6 @@ margin-top: -9%;
     grid-template-areas: "logo nav button";
     grid-template-columns: 40% 60% 20%;
   }
-
-  .hamburger-menu {
-    display: none;
-  } 
-
   .header .header__logo {
     grid-area: logo;
     display: flex;
@@ -368,6 +356,9 @@ margin-top: -9%;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
+  }
+  .hamburger-menu {
+    display: none;
   }
   .header__nav {
     display: flex;
@@ -580,26 +571,72 @@ margin-top: -9%;
     margin-right: 22%;
     height: 60%;
   }
+  .address-1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0.02em;
+    text-align: justified;
+  }
+  .small-address {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.001em;
+    text-align: justified;
+  }
+  .contacts {
+    transform: rotate(-90deg);
+    transform-origin: top right;
+    text-align: end;
+    margin-right: 11%;
+    margin-top: -7%;
+    width: 88%;
+  }
+  .snazzy_img {
+    /* snazzy-image (1) 1 */
+    width: 95%; /*646px */
+    height: 100%; /*351px */
+    left: 120px;
+    top: 2300px;
+    border-radius: 5px;
+    margin-top: -9%;
+  }
+  .footer_snazzy {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 50% 20% 30%;
+  }
+  .line5 {
+    text-align: center;
+    width: 100%;
+  }
+  .samwyle {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.001em;
+    text-align: center;
+    margin: 10%;
+  }
 }
-
 /* Медиазапрос для телефонов */
 @media (max-width: 767px) {
-
   .body {
     margin: 2%;
-  }  
+  }
   .header {
     display: grid;
     grid-template-columns: 2fr 1fr 8fr;
     height: 50%;
   }
-
   .header__logo {
     display: flex;
     align-items: flex-start;
-
-    }
-  
+  }
   .header .header__text {
     display: flex;
     align-items: center;
@@ -608,7 +645,6 @@ margin-top: -9%;
     font-size: 19px;
     font-style: normal;
     font-weight: 400;
-    
     margin-top: 2%;
   }
   .header__nav {
@@ -616,98 +652,79 @@ margin-top: -9%;
   }
   #menu__toggle {
     opacity: 0;
-    }
-    
-    #menu__toggle:checked ~ .menu__btn > span {
-        transform: rotate(45deg);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::before {
-        top: 0;
-        transform: rotate(0);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::after {
-        top: 0;
-        transform: rotate(90deg);
-    }
-    #menu__toggle:checked ~ .menu__box {
-        visibility: visible;
-        left: 0;
-    }
-    
-    .menu__btn {
-        background-color: white;
-        display: flex;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn {
+    background-color: white;
+    display: flex;
     align-items: center;
     position: fixed;
     top: 20px;
     left: 20px;
-
     width: 26px;
     height: 26px;
-
     cursor: pointer;
     z-index: 1;
   }
-
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
     display: block;
     position: absolute;
-
     width: 100%;
     height: 2px;
-
     background-color: #616161;
-
-    transition-duration: .25s;
+    transition-duration: 0.25s;
   }
   .menu__btn > span::before {
-    content: '';
+    content: "";
     top: -8px;
   }
   .menu__btn > span::after {
-    content: '';
+    content: "";
     top: 8px;
   }
-
   .menu__box {
     display: block;
     position: fixed;
     visibility: hidden;
     top: 0;
     left: -100%;
-
     width: 100%;
     height: 100%;
-
     margin: 0;
     padding: 80px 0;
-
     list-style: none;
-
     background-color: white;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-
-    transition-duration: .25s;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.25s;
   }
-
   .menu__item {
     display: block;
     padding: 12px 24px;
     text-align: center;
     color: #333;
-
     font-family: "Josefin Sans", sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    
-
     text-decoration: none;
-
-    transition-duration: .25s;
+    transition-duration: 0.25s;
   }
   .menu__item:hover {
     background-color: white;
@@ -725,7 +742,6 @@ margin-top: -9%;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    
   }
   .hamburger_media_thing {
     display: flex;
@@ -733,4 +749,6 @@ margin-top: -9%;
     justify-content: center;
   }
 }
+
+
 /*# sourceMappingURL=index.css.map */
