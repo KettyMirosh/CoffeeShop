@@ -227,6 +227,10 @@ h2 {
   margin-right: 15%;
 }
 
+.button-green_mobile {
+  display: none;
+}
+
 .promotion_p {
   color: var(--Secondary-Hard-green, #444A4A);
   font-family: "Alegreya Sans", sans-serif;
@@ -533,6 +537,9 @@ h3 {
     width: 80%;
     height: 80%;
   }
+  .button-green_mobile {
+    display: none;
+  }
   .follow-us {
     display: flex;
     align-self: flex-end;
@@ -709,14 +716,22 @@ h3 {
   }
   .header__logo {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-self: center;
+    width: 10%;
+    height: 50%;
+  }
+  .header__logo .header__simbol {
+    align-items: center;
+    justify-self: center;
   }
   .header .header__text {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #000;
     font-family: "Cedarville Cursive", sans-serif;
-    font-size: 19px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     margin-top: 2%;
@@ -749,8 +764,8 @@ h3 {
     position: fixed;
     top: 20px;
     left: 20px;
-    width: 26px;
-    height: 26px;
+    width: 27px;
+    height: 41px;
     cursor: pointer;
     z-index: 1;
   }
@@ -804,6 +819,7 @@ h3 {
     background-color: white;
   }
   .hamburger-menu {
+    display: block;
     justify-content: center;
   }
   .hamburger_logo {
@@ -821,6 +837,62 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .generalinfo__p {
+    color: #444A4A;
+    font-family: "Cedarville Cursive", sans-serif;
+    font-size: 150%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .generalinfo__h1 {
+    color: #000;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 300%;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .button-green {
+    display: none;
+  }
+  .button-green_mobile {
+    display: block;
+    margin-left: 35%;
+    width: 189px;
+    height: 53px;
+    flex-shrink: 0;
+    background-color: rgb(45, 99, 94);
+    border-radius: 6px;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: "George Rounded";
+    font-size: 100%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .section-general {
+    display: grid;
+    grid-template-columns: 90%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .generalinfo {
+    padding-top: 15%;
+  }
+  .otherinfo {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+  .about_us_title {
+    display: none;
   }
 }
 
