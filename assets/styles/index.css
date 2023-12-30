@@ -771,23 +771,19 @@ h3 {
 @media (max-width: 767px) {
   .body {
     margin: 2%;
-  }
+  }  
   .header {
     display: grid;
     grid-template-columns: 2fr 1fr 8fr;
-    height: 50%;
+    
   }
   .header__logo {
     display: flex;
-    align-items: center;
-    justify-self: center;
-    width: 10%;
-    height: 50%;
-  }
-  .header__logo .header__simbol {
-    align-items: center;
-    justify-self: center;
-  }
+    align-items: flex-start;
+    margin-left: 30%;
+    margin-top: -10%;
+    }
+
   .header .header__text {
     display: flex;
     align-items: center;
@@ -797,8 +793,8 @@ h3 {
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
-    margin-top: 2%;
   }
+
   .header__nav {
     display: none;
   }
