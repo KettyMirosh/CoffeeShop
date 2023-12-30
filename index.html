@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/sass/index.scss" />
     <link rel="stylesheet" href="assets/styles/index.css" />
-    <title>Document</title>
+    <title>Coffee Shop</title>
   </head>
   <body class="body">
     <header class="header">
-      <div class="hamburger-menu"> 
+      <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
         <label class="menu__btn" for="menu__toggle">
-            <span></span>
+          <span></span>
         </label>
-    
+
         <ul class="menu__box">
-            <li class="hamburger_logo"><img
+          <li class="hamburger_logo">
+            <img
               class="hamburger__simbol"
               src="assets/pictures/logo.png"
               alt="assets/pictures/logo.png"
             />
-            <p class="hamburger__text">Samwayle</p></li>
-            <li><a class="menu__item" href="#">About us</a></li>
-            <li><a class="menu__item" href="#">Promotion</a></li>
-            <li><a class="menu__item" href="#">Shop</a></li>
-            <li><a class="menu__item" href="#">Contacts</a></li>
-            <li class="hamburger_media_thing">
-              <a class="hamburger__media icons" href=""
+            <p class="hamburger__text">Samwayle</p>
+          </li>
+          <li><a class="menu__item" href="#">About us</a></li>
+          <li><a class="menu__item" href="#">Promotion</a></li>
+          <li><a class="menu__item" href="#">Shop</a></li>
+          <li><a class="menu__item" href="#">Contacts</a></li>
+          <li class="hamburger_media_thing">
+            <a class="hamburger__media icons" href=""
               ><img
                 class="hamburger__media2 icons"
                 src="assets/pictures/insta.png"
@@ -44,9 +46,10 @@
                 class="hamburger__media3 icons"
                 src="assets/pictures/twi.png"
                 alt="twitter_icon"
-            /></a></li>
+            /></a>
+          </li>
         </ul>
-    </div>
+      </div>
       <div class="header__logo">
         <img
           class="header__simbol"
@@ -69,6 +72,23 @@
           <p class="generalinfo__p">Drink coffee, enjoy with Samwyle</p>
           <h1 class="generalinfo__h1">Coffee Shop</h1>
           <button class="button-green">Order here</button>
+          <button class="button-green_mobile">
+            Order here
+            <svg
+              width="28"
+              height="8"
+              viewBox="0 0 28 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 4H26M26 4C26 4 24.1716 2.17157 23 1M26 4L23 7"
+                stroke="white"
+                stroke-width="1.7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
         </div>
 
         <div class="otherinfo">
@@ -165,6 +185,41 @@
           />
         </div>
       </section>
+      <div class="goods" id="shop">
+        <div>
+          <img class="left" src="./assets/pictures/left.svg" alt="left" />
+        </div>
+        <div class="card card1">
+          <h3>Americano</h3>
+          <p class="description">
+            The name Latte (from Italian “milk”) speaks about the main
+            ingredient of the drink. It is recommended to take fat milk - at
+            least 3.2%. In addition to it, milk foam.
+          </p>
+          <button class="card-btn">Order now</button>
+        </div>
+        <div class="card card2">
+          <h3>Latte</h3>
+          <p class="description">
+            The name Latte (from Italian “milk”) speaks about the main
+            ingredient of the drink. It is recommended to take fat milk - at
+            least 3.2%. In addition to it, milk foam.
+          </p>
+          <button class="card-btn">Order now</button>
+        </div>
+        <div class="card card3">
+          <h3>Espresso</h3>
+          <p class="description">
+            Espresso - black coffee made in a coffee machine or a special coffee
+            machine, where hot water is passed through pressed ground beans at a
+            pressure.
+          </p>
+          <button class="card-btn">Order now</button>
+        </div>
+        <div>
+          <img class="right" src="./assets/pictures/right.svg" alt="right" />
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <section class="footer_snazzy" id="contacts">
