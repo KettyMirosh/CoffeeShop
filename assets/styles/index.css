@@ -772,11 +772,7 @@ h3 {
   .body {
     margin: 2%;
   }  
-  .header {
-    display: grid;
-    grid-template-columns: 2fr 1fr 8fr;
-    
-  }
+
   .header__logo {
     display: flex;
     align-items: flex-start;
