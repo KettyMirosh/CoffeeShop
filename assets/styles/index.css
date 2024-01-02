@@ -555,22 +555,26 @@ h3 {
   .follow-us {
     display: flex;
     align-self: flex-end;
-    margin-bottom: 22%;
-    margin-left: -12%;
-    width: 80%;
+    margin-bottom: 28%;
+    margin-left: -20%;
+    width: 65%;
     flex-shrink: 0;
     color: #444A4A;
     transform: rotate(-90deg);
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    
   }
   .follow-us .follow-us__media {
     justify-content: space-between;
-    padding: 3px;
+    align-items: center;
+    width: 50%;
+    
+  
   }
   h2 {
     font-family: "Josefin Sans", sans-serif;
@@ -795,6 +799,7 @@ h3 {
 }
 /* Медиазапрос для телефонов */
 @media (max-width: 767px) {
+
 <<<<<<< HEAD
 =======
 
@@ -802,15 +807,11 @@ h3 {
   .body {
     margin: 2%;
   }  
-  .header {
-    display: grid;
-    grid-template-columns: 2fr 1fr 8fr;
-    
-  }
+
   .header__logo {
     display: flex;
     align-items: flex-start;
-    margin-left: 30%;
+    margin-left: 10%;
     margin-top: -10%;
     }
 
@@ -820,13 +821,23 @@ h3 {
     justify-content: center;
     color: #000;
     font-family: "Cedarville Cursive", sans-serif;
-    font-size: 28px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
   }
 
+  
   .header__nav {
-    display: none;
+    display: flex;
+    grid-area: nav;
+    text-align: center;
+    align-self: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
   }
   #menu__toggle {
     opacity: 0;
@@ -851,10 +862,10 @@ h3 {
     display: flex;
     align-items: center;
     position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 27px;
-    height: 41px;
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
     cursor: pointer;
     z-index: 1;
   }
@@ -927,24 +938,13 @@ h3 {
     align-items: center;
     justify-content: center;
   }
-<<<<<<< HEAD
-
-
-
-
   .generalinfo__p {
     color: #444A4A;
     font-family: "Cedarville Cursive", sans-serif;
-    font-size: 100%;
+    font-size: 150%;
     font-style: normal;
-    font-weight: 300%;
+    font-weight: 400;
     line-height: normal;
-    text-align: justify;
-    white-space: nowrap;
-    text-align: center;
-    margin-left: 30% ;
-    
-
   }
   .generalinfo__h1 {
     color: #000;
@@ -953,38 +953,11 @@ h3 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    white-space: nowrap;
-    text-align: center;
-    margin-left: 30%;
-  } 
-
-
-
-  .otherinfo {
-    display: none;
   }
-  .contacts {
-    display: none;
-  }
-  .about_us_title {
-    display: none;
-  } 
-  .snazzy_img {
-    display: none;
-  }
-  .line5 {
-    display: none;
-  }
-
-
-
-
-
-
   .button-green {
     display: none;
   }
-   .button-green_mobile { /* зеленая кнопка order here */
+  .button-green_mobile {
     display: block;
     margin-left: 35%;
     width: 189px;
@@ -1000,212 +973,29 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-  } 
-
-
-
-
-
-.orange-square {
-  width: 380px;
-  height: 248px;
-  top: 20px;
-  bottom: 10%;
-}
-
-.orange-square__img {
-
-height: 248px;
-margin-top: 0%;
-margin-left: 5%;
-filter: grayscale(100%);
-filter: brightness(0%);
-}
-
-
-
-.about_us {
-  display: grid;
-  grid-template-columns: 100%;
-  gap: 23 px 13 px;
-}
-.about_us_info {
-
-  text-align: center;
-  margin-bottom: 60%;
-  margin-left: 10%;
-  margin-top: 30%; 
-
-}
-
-
-.promotion {
-  display: grid;
-  grid-template-columns: 100%;
-}
-
-.green-square__img {
-margin-top: -7%;
-margin-bottom: -7%;
-}
-.promotion_info {
-  text-align: center;
-  margin-bottom: 10%;
-  margin-left: 10%;
-  margin-top: 50%;
-
-}
-.green-square {
-  width: 375px;
-height: 287px;
-top: -1000px;
-margin-top: 10%;
-
-}
-
-
-.goods {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-column-start:3 ;
-  margin-top: -70%;
-  box-shadow: 0px 7px 34px 0px rgba(35, 57, 55, 0.25);
-
-}
-
-
-.card1 {
-  grid-row: 3;
-  
-}
-.card3 {
-    grid-row: 1;
-    text-align: left;
-}
-.card2 {
-  grid-row: 2;
-}
-
-.card-btn{
-  display: none;
-}
-.card-btn1 {
-  display: inline;
-    flex-shrink: 0;
-  background-color: rgb(45, 99, 94);
-  border-radius: 2px;
-  border: none;
-  color: #FFF;
-  text-align: center;
-  font-family: "George Rounded";
-  font-size: 95%;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  align-items: center;
-  width: 235px;
-height: 54px;
-top: 3675px;
-margin-left: 20%;
-
-
-}
-
-.promotion_title {
-  display: none;
-}
-
-.left {
-  display: none;
-}
-.right{
-  display: none;
-}
-
-
-.footer {
-  display: grid;
-  grid-template-columns: 100%;
-
-}
-.footer_snazzy {
-  display: grid;
-  grid-template-columns: 100%;
-}
-
-.mapimg {
-  
-  flex-shrink: 0;
-  border-radius: 25px;
-  background: var(--Main-White, #FFF);
+  }
+  .section-general {
     display: grid;
-  padding: 5%;
-  margin-top: 10%;
-  margin-bottom: 7%;
-
-}
-.address-2 {
-  font-size: 18px;
-}
-.address-4 {
-  display: none;
-}
-.address-5 {
-  display: none;
-}
-.add {
-  display: inline-block;
-  text-align: center;
-}
-.seemore{
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-font-family: Josefin Sans;
-font-size: 16px;
-font-weight: 700;
-line-height: 16px;
-letter-spacing: 0em;
-border: 1.7px solid rgba(68, 74, 74, 0);
-text-align: center;
-margin-left: 25%;
-padding-top: 5%;
-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.17);
-
-width: 50%;
-height: 32%;
-top: 373px;
-left: 111px;
-}
-.samwyle {
-color: rgb(159, 167, 167);
-size: 14px;
-
-}
-
-.arrowfooter {
-display: flex;
-margin-left: 25%;
-margin-bottom: 20%;
-
-}
-
-.otherinfo {
-  display: none;
-}
-.contacts {
-  display: none;
-}
-.about_us_title {
-  display: none;
-} 
-
-
-
+    grid-template-columns: 90%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .generalinfo {
+    padding-top: 15%;
+  }
+  .otherinfo {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+  .about_us_title {
+    display: none;
+  }
 }
 
 
-
-=======
-}
->>>>>>> parent of 52c50fc (frontend)
 /*# sourceMappingURL=index.css.map */
+}
