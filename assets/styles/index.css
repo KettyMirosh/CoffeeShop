@@ -795,6 +795,10 @@ h3 {
 }
 /* Медиазапрос для телефонов */
 @media (max-width: 767px) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 52c50fc (frontend)
   .body {
     margin: 2%;
   }  
@@ -923,6 +927,7 @@ h3 {
     align-items: center;
     justify-content: center;
   }
+<<<<<<< HEAD
 
 
 
@@ -1200,4 +1205,7 @@ margin-bottom: 20%;
 
 
 
+=======
+}
+>>>>>>> parent of 52c50fc (frontend)
 /*# sourceMappingURL=index.css.map */
