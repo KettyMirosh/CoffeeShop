@@ -555,26 +555,22 @@ h3 {
   .follow-us {
     display: flex;
     align-self: flex-end;
-    margin-bottom: 28%;
-    margin-left: -20%;
-    width: 65%;
+    margin-bottom: 22%;
+    margin-left: -12%;
+    width: 80%;
     flex-shrink: 0;
     color: #444A4A;
     transform: rotate(-90deg);
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    
   }
   .follow-us .follow-us__media {
     justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    
-  
+    padding: 3px;
   }
   h2 {
     font-family: "Josefin Sans", sans-serif;
